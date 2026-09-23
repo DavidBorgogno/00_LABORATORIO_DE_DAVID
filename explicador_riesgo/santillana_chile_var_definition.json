@@ -1,0 +1,578 @@
+{
+    "sesion": {
+        "descripcion": "Año escolar en curso.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Es un dato de contexto sobre el año escolar; no representa por sí mismo un riesgo."
+    },
+    "level_code_int": {
+        "descripcion": "Nivel educativo del alumno.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Es un dato de contexto sobre el nivel del alumno; no representa por sí mismo un riesgo."
+    },
+    "school_num": {
+        "descripcion": "Escuela del alumno.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Es un dato de contexto sobre la escuela; no representa por sí mismo un riesgo."
+    },
+    "materia_num": {
+        "descripcion": "Materia que cursa el alumno.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Es un dato de contexto sobre la materia; no representa por sí mismo un riesgo, aunque algunas materias suelen ser más difíciles."
+    },
+    "tiene_lrs": {
+        "descripcion": "Actividad registrada en la plataforma digital.",
+        "unidad": "binario",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "No tener actividad en la plataforma digital muestra que el alumno no usó el material y aumenta el riesgo."
+    },
+    "lrs_n_unidades": {
+        "descripcion": "Cantidad de unidades del material que trabajó.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Trabajar pocas unidades del material muestra poca dedicación y aumenta el riesgo."
+    },
+    "lrs_n_actividades": {
+        "descripcion": "Cantidad de actividades digitales que realizó.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Realizar pocas actividades muestra bajo compromiso y aumenta el riesgo."
+    },
+    "lrs_n_statements": {
+        "descripcion": "Cantidad de interacciones registradas en la plataforma.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Registrar pocas interacciones refleja un uso escaso de la plataforma y aumenta el riesgo."
+    },
+    "lrs_score_mean": {
+        "descripcion": "Nota promedio en las actividades digitales.",
+        "unidad": "indice",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Una nota baja en las actividades digitales muestra dificultades y aumenta el riesgo."
+    },
+    "lrs_score_max": {
+        "descripcion": "Mejor nota en las actividades digitales.",
+        "unidad": "indice",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Una mejor nota baja muestra que le costó rendir bien incluso en su mejor momento y aumenta el riesgo."
+    },
+    "lrs_score_std": {
+        "descripcion": "Regularidad de sus notas en las actividades digitales.",
+        "unidad": "indice",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Refleja si su rendimiento digital fue parejo o irregular; es un dato de contexto y no marca por sí solo un riesgo."
+    },
+    "lrs_n_completadas": {
+        "descripcion": "Cantidad de actividades digitales que completó.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Completar pocas actividades muestra poca constancia y aumenta el riesgo."
+    },
+    "lrs_n_no_completadas": {
+        "descripcion": "Cantidad de actividades digitales que dejó sin terminar.",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Dejar muchas actividades sin terminar refleja desenganche y aumenta el riesgo."
+    },
+    "lrs_n_exitosas": {
+        "descripcion": "Cantidad de actividades digitales que aprobó.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Aprobar pocas actividades muestra bajo desempeño y aumenta el riesgo."
+    },
+    "lrs_n_dias_activo": {
+        "descripcion": "Cantidad de días en que usó la plataforma.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Conectarse pocos días muestra un uso esporádico y aumenta el riesgo."
+    },
+    "lrs_span_dias": {
+        "descripcion": "Período de actividad en la plataforma.",
+        "unidad": "dias",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un período de actividad corto muestra un uso intermitente y se asocia a mayor riesgo."
+    },
+    "lrs_pct_completadas": {
+        "descripcion": "Porcentaje de actividades digitales que completó.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Completar un bajo porcentaje de las actividades muestra que abandona tareas y aumenta el riesgo."
+    },
+    "lrs_pct_exitosas": {
+        "descripcion": "Porcentaje de actividades digitales que aprobó.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Aprobar un bajo porcentaje de las actividades muestra bajo desempeño y aumenta el riesgo."
+    },
+    "pleno_q1_n_tests": {
+        "descripcion": "Cantidad de evaluaciones que rindió al inicio del año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Haber rendido pocas evaluaciones al inicio del año muestra poca participación y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q1_n_finalizados": {
+        "descripcion": "Cantidad de evaluaciones que terminó al inicio del año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Terminar pocas evaluaciones al inicio del año muestra baja constancia y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q1_score_mean": {
+        "descripcion": "Nota promedio en las evaluaciones al inicio del año.",
+        "unidad": "indice",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Una nota promedio por debajo del nivel para aprobar al inicio del año muestra bajo rendimiento y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q1_score_max": {
+        "descripcion": "Mejor nota en las evaluaciones al inicio del año.",
+        "unidad": "indice",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Una mejor nota baja al inicio del año muestra que le costó rendir bien incluso en su mejor evaluación y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q1_score_std": {
+        "descripcion": "Regularidad de sus notas al inicio del año.",
+        "unidad": "indice",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Refleja si su rendimiento fue parejo o irregular al inicio del año; es un dato de contexto y no marca por sí solo un riesgo."
+    },
+    "pleno_q1_n_aprobados": {
+        "descripcion": "Cantidad de evaluaciones que aprobó al inicio del año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Aprobar pocas evaluaciones al inicio del año muestra bajo rendimiento y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q1_n_tests_t3": {
+        "descripcion": "Cantidad de evaluaciones de mayor dificultad que rindió al inicio del año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Refleja cuánto se expuso a los contenidos más difíciles al inicio del año; es un dato de contexto y no marca por sí solo un riesgo."
+    },
+    "pleno_q1_correct_mean": {
+        "descripcion": "Promedio de respuestas correctas por evaluación al inicio del año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Pocas respuestas correctas por evaluación al inicio del año muestran que maneja poco los contenidos y aumentan el riesgo de no aprobar."
+    },
+    "pleno_q1_incorrect_mean": {
+        "descripcion": "Promedio de respuestas incorrectas por evaluación al inicio del año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Muchas respuestas incorrectas por evaluación al inicio del año muestran dificultades de aprendizaje y aumentan el riesgo de no aprobar."
+    },
+    "pleno_q1_omitted_mean": {
+        "descripcion": "Promedio de respuestas sin contestar por evaluación al inicio del año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Dejar muchas respuestas sin contestar al inicio del año sugiere que no sabía el contenido o se desenganchó, y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q1_pct_correct_mean": {
+        "descripcion": "Porcentaje de respuestas correctas al inicio del año.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un bajo porcentaje de respuestas correctas al inicio del año muestra que maneja poco los contenidos y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q1_pct_finalizados": {
+        "descripcion": "Porcentaje de evaluaciones terminadas al inicio del año.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Terminar un bajo porcentaje de las evaluaciones al inicio del año muestra que abandona pruebas y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q1_pct_aprobados": {
+        "descripcion": "Porcentaje de evaluaciones aprobadas al inicio del año.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un bajo porcentaje de evaluaciones aprobadas al inicio del año muestra bajo rendimiento y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q1_pct_tests_t3": {
+        "descripcion": "Porcentaje de evaluaciones de mayor dificultad al inicio del año.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Refleja qué proporción de sus evaluaciones fueron de mayor dificultad al inicio del año; es un dato de contexto y no marca por sí solo un riesgo."
+    },
+    "pleno_q12_n_tests": {
+        "descripcion": "Cantidad de evaluaciones que rindió hacia mitad de año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Haber rendido pocas evaluaciones hacia mitad de año muestra poca participación y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q12_n_finalizados": {
+        "descripcion": "Cantidad de evaluaciones que terminó hacia mitad de año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Terminar pocas evaluaciones hacia mitad de año muestra baja constancia y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q12_score_mean": {
+        "descripcion": "Nota promedio en las evaluaciones hacia mitad de año.",
+        "unidad": "indice",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Una nota promedio por debajo del nivel para aprobar hacia mitad de año muestra bajo rendimiento y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q12_score_max": {
+        "descripcion": "Mejor nota en las evaluaciones hacia mitad de año.",
+        "unidad": "indice",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Una mejor nota baja hacia mitad de año muestra que le costó rendir bien incluso en su mejor evaluación y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q12_score_std": {
+        "descripcion": "Regularidad de sus notas hacia mitad de año.",
+        "unidad": "indice",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Refleja si su rendimiento fue parejo o irregular hacia mitad de año; es un dato de contexto y no marca por sí solo un riesgo."
+    },
+    "pleno_q12_n_aprobados": {
+        "descripcion": "Cantidad de evaluaciones que aprobó hacia mitad de año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Aprobar pocas evaluaciones hacia mitad de año muestra bajo rendimiento y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q12_n_tests_t3": {
+        "descripcion": "Cantidad de evaluaciones de mayor dificultad que rindió hacia mitad de año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Refleja cuánto se expuso a los contenidos más difíciles hacia mitad de año; es un dato de contexto y no marca por sí solo un riesgo."
+    },
+    "pleno_q12_correct_mean": {
+        "descripcion": "Promedio de respuestas correctas por evaluación hacia mitad de año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Pocas respuestas correctas por evaluación hacia mitad de año muestran que maneja poco los contenidos y aumentan el riesgo de no aprobar."
+    },
+    "pleno_q12_incorrect_mean": {
+        "descripcion": "Promedio de respuestas incorrectas por evaluación hacia mitad de año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Muchas respuestas incorrectas por evaluación hacia mitad de año muestran dificultades de aprendizaje y aumentan el riesgo de no aprobar."
+    },
+    "pleno_q12_omitted_mean": {
+        "descripcion": "Promedio de respuestas sin contestar por evaluación hacia mitad de año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Dejar muchas respuestas sin contestar hacia mitad de año sugiere que no sabía el contenido o se desenganchó, y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q12_pct_correct_mean": {
+        "descripcion": "Porcentaje de respuestas correctas hacia mitad de año.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un bajo porcentaje de respuestas correctas hacia mitad de año muestra que maneja poco los contenidos y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q12_pct_finalizados": {
+        "descripcion": "Porcentaje de evaluaciones terminadas hacia mitad de año.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Terminar un bajo porcentaje de las evaluaciones hacia mitad de año muestra que abandona pruebas y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q12_pct_aprobados": {
+        "descripcion": "Porcentaje de evaluaciones aprobadas hacia mitad de año.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un bajo porcentaje de evaluaciones aprobadas hacia mitad de año muestra bajo rendimiento y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q12_pct_tests_t3": {
+        "descripcion": "Porcentaje de evaluaciones de mayor dificultad hacia mitad de año.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Refleja qué proporción de sus evaluaciones fueron de mayor dificultad hacia mitad de año; es un dato de contexto y no marca por sí solo un riesgo."
+    },
+    "pleno_q123_n_tests": {
+        "descripcion": "Cantidad de evaluaciones que rindió en lo que va del año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Haber rendido pocas evaluaciones en lo que va del año muestra poca participación y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q123_n_finalizados": {
+        "descripcion": "Cantidad de evaluaciones que terminó en lo que va del año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Terminar pocas evaluaciones en lo que va del año muestra baja constancia y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q123_score_mean": {
+        "descripcion": "Nota promedio en las evaluaciones en lo que va del año.",
+        "unidad": "indice",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Una nota promedio por debajo del nivel para aprobar en lo que va del año muestra bajo rendimiento y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q123_score_max": {
+        "descripcion": "Mejor nota en las evaluaciones en lo que va del año.",
+        "unidad": "indice",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Una mejor nota baja en lo que va del año muestra que le costó rendir bien incluso en su mejor evaluación y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q123_score_std": {
+        "descripcion": "Regularidad de sus notas en lo que va del año.",
+        "unidad": "indice",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Refleja si su rendimiento fue parejo o irregular en lo que va del año; es un dato de contexto y no marca por sí solo un riesgo."
+    },
+    "pleno_q123_n_aprobados": {
+        "descripcion": "Cantidad de evaluaciones que aprobó en lo que va del año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Aprobar pocas evaluaciones en lo que va del año muestra bajo rendimiento y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q123_n_tests_t3": {
+        "descripcion": "Cantidad de evaluaciones de mayor dificultad que rindió en lo que va del año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Refleja cuánto se expuso a los contenidos más difíciles en lo que va del año; es un dato de contexto y no marca por sí solo un riesgo."
+    },
+    "pleno_q123_correct_mean": {
+        "descripcion": "Promedio de respuestas correctas por evaluación en lo que va del año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Pocas respuestas correctas por evaluación en lo que va del año muestran que maneja poco los contenidos y aumentan el riesgo de no aprobar."
+    },
+    "pleno_q123_incorrect_mean": {
+        "descripcion": "Promedio de respuestas incorrectas por evaluación en lo que va del año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Muchas respuestas incorrectas por evaluación en lo que va del año muestran dificultades de aprendizaje y aumentan el riesgo de no aprobar."
+    },
+    "pleno_q123_omitted_mean": {
+        "descripcion": "Promedio de respuestas sin contestar por evaluación en lo que va del año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Dejar muchas respuestas sin contestar en lo que va del año sugiere que no sabía el contenido o se desenganchó, y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q123_pct_correct_mean": {
+        "descripcion": "Porcentaje de respuestas correctas en lo que va del año.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un bajo porcentaje de respuestas correctas en lo que va del año muestra que maneja poco los contenidos y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q123_pct_finalizados": {
+        "descripcion": "Porcentaje de evaluaciones terminadas en lo que va del año.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Terminar un bajo porcentaje de las evaluaciones en lo que va del año muestra que abandona pruebas y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q123_pct_aprobados": {
+        "descripcion": "Porcentaje de evaluaciones aprobadas en lo que va del año.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un bajo porcentaje de evaluaciones aprobadas en lo que va del año muestra bajo rendimiento y aumenta el riesgo de no aprobar."
+    },
+    "pleno_q123_pct_tests_t3": {
+        "descripcion": "Porcentaje de evaluaciones de mayor dificultad en lo que va del año.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Refleja qué proporción de sus evaluaciones fueron de mayor dificultad en lo que va del año; es un dato de contexto y no marca por sí solo un riesgo."
+    },
+    "delta_q12_q1_score_mean": {
+        "descripcion": "Evolución de su nota promedio entre el comienzo y la mitad del año.",
+        "unidad": "indice",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un retroceso en su nota promedio entre el comienzo y la mitad del año muestra que su desempeño empeoró y aumenta el riesgo de no aprobar."
+    },
+    "delta_q12_q1_score_max": {
+        "descripcion": "Evolución de su mejor nota entre el comienzo y la mitad del año.",
+        "unidad": "indice",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un retroceso en su mejor nota entre el comienzo y la mitad del año muestra que su desempeño empeoró y aumenta el riesgo de no aprobar."
+    },
+    "delta_q12_q1_score_std": {
+        "descripcion": "Evolución de la regularidad de sus notas entre el comienzo y la mitad del año.",
+        "unidad": "indice",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Refleja cómo cambió la regularidad de sus notas entre el comienzo y la mitad del año; es un dato de contexto y no marca por sí solo un riesgo."
+    },
+    "delta_q12_q1_correct_mean": {
+        "descripcion": "Evolución de sus respuestas correctas entre el comienzo y la mitad del año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un retroceso en sus respuestas correctas entre el comienzo y la mitad del año muestra que su desempeño empeoró y aumenta el riesgo de no aprobar."
+    },
+    "delta_q12_q1_incorrect_mean": {
+        "descripcion": "Evolución de sus respuestas incorrectas entre el comienzo y la mitad del año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Un aumento de sus respuestas incorrectas entre el comienzo y la mitad del año muestra que su desempeño empeoró y aumenta el riesgo de no aprobar."
+    },
+    "delta_q12_q1_omitted_mean": {
+        "descripcion": "Evolución de sus respuestas sin contestar entre el comienzo y la mitad del año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Un aumento de sus respuestas sin contestar entre el comienzo y la mitad del año muestra que su desempeño empeoró y aumenta el riesgo de no aprobar."
+    },
+    "delta_q12_q1_pct_correct_mean": {
+        "descripcion": "Evolución de su porcentaje de respuestas correctas entre el comienzo y la mitad del año.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un retroceso en su porcentaje de respuestas correctas entre el comienzo y la mitad del año muestra que su desempeño empeoró y aumenta el riesgo de no aprobar."
+    },
+    "delta_q12_q1_pct_aprobados": {
+        "descripcion": "Evolución de su porcentaje de evaluaciones aprobadas entre el comienzo y la mitad del año.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un retroceso en su porcentaje de evaluaciones aprobadas entre el comienzo y la mitad del año muestra que su desempeño empeoró y aumenta el riesgo de no aprobar."
+    },
+    "delta_q12_q1_pct_tests_t3": {
+        "descripcion": "Evolución de la proporción de evaluaciones difíciles entre el comienzo y la mitad del año.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Refleja cómo cambió la proporción de evaluaciones difíciles entre el comienzo y la mitad del año; es un dato de contexto y no marca por sí solo un riesgo."
+    },
+    "delta_q123_q12_score_mean": {
+        "descripcion": "Evolución de su nota promedio entre la mitad y el final del año.",
+        "unidad": "indice",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un retroceso en su nota promedio entre la mitad y el final del año muestra que su desempeño empeoró y aumenta el riesgo de no aprobar."
+    },
+    "delta_q123_q12_score_std": {
+        "descripcion": "Evolución de la regularidad de sus notas entre la mitad y el final del año.",
+        "unidad": "indice",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Refleja cómo cambió la regularidad de sus notas entre la mitad y el final del año; es un dato de contexto y no marca por sí solo un riesgo."
+    },
+    "delta_q123_q12_correct_mean": {
+        "descripcion": "Evolución de sus respuestas correctas entre la mitad y el final del año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un retroceso en sus respuestas correctas entre la mitad y el final del año muestra que su desempeño empeoró y aumenta el riesgo de no aprobar."
+    },
+    "delta_q123_q12_incorrect_mean": {
+        "descripcion": "Evolución de sus respuestas incorrectas entre la mitad y el final del año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Un aumento de sus respuestas incorrectas entre la mitad y el final del año muestra que su desempeño empeoró y aumenta el riesgo de no aprobar."
+    },
+    "delta_q123_q12_omitted_mean": {
+        "descripcion": "Evolución de sus respuestas sin contestar entre la mitad y el final del año.",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Un aumento de sus respuestas sin contestar entre la mitad y el final del año muestra que su desempeño empeoró y aumenta el riesgo de no aprobar."
+    },
+    "delta_q123_q12_pct_correct_mean": {
+        "descripcion": "Evolución de su porcentaje de respuestas correctas entre la mitad y el final del año.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un retroceso en su porcentaje de respuestas correctas entre la mitad y el final del año muestra que su desempeño empeoró y aumenta el riesgo de no aprobar."
+    },
+    "delta_q123_q12_pct_aprobados": {
+        "descripcion": "Evolución de su porcentaje de evaluaciones aprobadas entre la mitad y el final del año.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un retroceso en su porcentaje de evaluaciones aprobadas entre la mitad y el final del año muestra que su desempeño empeoró y aumenta el riesgo de no aprobar."
+    },
+    "delta_q123_q12_pct_tests_t3": {
+        "descripcion": "Evolución de la proporción de evaluaciones difíciles entre la mitad y el final del año.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Refleja cómo cambió la proporción de evaluaciones difíciles entre la mitad y el final del año; es un dato de contexto y no marca por sí solo un riesgo."
+    },
+    "rel_q1_score_mean_vs_best": {
+        "descripcion": "Distancia con el mejor alumno de su materia en notas, al inicio del año.",
+        "unidad": "indice",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Estar lejos del mejor alumno de su materia en notas al inicio del año lo ubica con bajo rendimiento frente a sus compañeros y aumenta el riesgo de no aprobar."
+    },
+    "rel_q1_score_mean_vs_mean": {
+        "descripcion": "Comparación con el promedio de su materia en notas, al inicio del año.",
+        "unidad": "indice",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Estar por debajo del promedio de su materia en notas al inicio del año lo ubica con bajo rendimiento frente a sus compañeros y aumenta el riesgo de no aprobar."
+    },
+    "rel_q1_score_mean_rank_pct": {
+        "descripcion": "Posición entre sus compañeros de materia en notas, al inicio del año.",
+        "unidad": "percentil",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Quedar entre los últimos de su materia en notas al inicio del año muestra bajo rendimiento frente a sus compañeros y aumenta el riesgo de no aprobar."
+    },
+    "rel_q1_pct_aprobados_vs_mean": {
+        "descripcion": "Comparación con el promedio de su materia en evaluaciones aprobadas, al inicio del año.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Estar por debajo del promedio de su materia en evaluaciones aprobadas al inicio del año lo ubica con bajo rendimiento frente a sus compañeros y aumenta el riesgo de no aprobar."
+    },
+    "rel_q1_pct_aprobados_rank_pct": {
+        "descripcion": "Posición entre sus compañeros de materia en evaluaciones aprobadas, al inicio del año.",
+        "unidad": "percentil",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Quedar entre los últimos de su materia en evaluaciones aprobadas al inicio del año muestra bajo rendimiento frente a sus compañeros y aumenta el riesgo de no aprobar."
+    },
+    "rel_q12_score_mean_rank_pct": {
+        "descripcion": "Posición entre sus compañeros de materia en notas, hacia mitad de año.",
+        "unidad": "percentil",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Quedar entre los últimos de su materia en notas hacia mitad de año muestra bajo rendimiento frente a sus compañeros y aumenta el riesgo de no aprobar."
+    },
+    "rel_q12_pct_aprobados_vs_mean": {
+        "descripcion": "Comparación con el promedio de su materia en evaluaciones aprobadas, hacia mitad de año.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Estar por debajo del promedio de su materia en evaluaciones aprobadas hacia mitad de año lo ubica con bajo rendimiento frente a sus compañeros y aumenta el riesgo de no aprobar."
+    },
+    "rel_q12_pct_aprobados_rank_pct": {
+        "descripcion": "Posición entre sus compañeros de materia en evaluaciones aprobadas, hacia mitad de año.",
+        "unidad": "percentil",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Quedar entre los últimos de su materia en evaluaciones aprobadas hacia mitad de año muestra bajo rendimiento frente a sus compañeros y aumenta el riesgo de no aprobar."
+    },
+    "rel_q12_pct_correct_mean_vs_mean": {
+        "descripcion": "Comparación con el promedio de su materia en respuestas correctas, hacia mitad de año.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Estar por debajo del promedio de su materia en respuestas correctas hacia mitad de año lo ubica con bajo rendimiento frente a sus compañeros y aumenta el riesgo de no aprobar."
+    },
+    "rel_q12_pct_correct_mean_rank_pct": {
+        "descripcion": "Posición entre sus compañeros de materia en respuestas correctas, hacia mitad de año.",
+        "unidad": "percentil",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Quedar entre los últimos de su materia en respuestas correctas hacia mitad de año muestra bajo rendimiento frente a sus compañeros y aumenta el riesgo de no aprobar."
+    },
+    "rel_q123_score_mean_vs_best": {
+        "descripcion": "Distancia con el mejor alumno de su materia en notas, en lo que va del año.",
+        "unidad": "indice",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Estar lejos del mejor alumno de su materia en notas en lo que va del año lo ubica con bajo rendimiento frente a sus compañeros y aumenta el riesgo de no aprobar."
+    },
+    "rel_q123_score_mean_vs_mean": {
+        "descripcion": "Comparación con el promedio de su materia en notas, en lo que va del año.",
+        "unidad": "indice",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Estar por debajo del promedio de su materia en notas en lo que va del año lo ubica con bajo rendimiento frente a sus compañeros y aumenta el riesgo de no aprobar."
+    },
+    "rel_q123_score_mean_rank_pct": {
+        "descripcion": "Posición entre sus compañeros de materia en notas, en lo que va del año.",
+        "unidad": "percentil",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Quedar entre los últimos de su materia en notas en lo que va del año muestra bajo rendimiento frente a sus compañeros y aumenta el riesgo de no aprobar."
+    },
+    "rel_q123_pct_aprobados_vs_best": {
+        "descripcion": "Distancia con el mejor alumno de su materia en evaluaciones aprobadas, en lo que va del año.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Estar lejos del mejor alumno de su materia en evaluaciones aprobadas en lo que va del año lo ubica con bajo rendimiento frente a sus compañeros y aumenta el riesgo de no aprobar."
+    },
+    "rel_q123_pct_aprobados_vs_mean": {
+        "descripcion": "Comparación con el promedio de su materia en evaluaciones aprobadas, en lo que va del año.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Estar por debajo del promedio de su materia en evaluaciones aprobadas en lo que va del año lo ubica con bajo rendimiento frente a sus compañeros y aumenta el riesgo de no aprobar."
+    },
+    "rel_q123_pct_aprobados_rank_pct": {
+        "descripcion": "Posición entre sus compañeros de materia en evaluaciones aprobadas, en lo que va del año.",
+        "unidad": "percentil",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Quedar entre los últimos de su materia en evaluaciones aprobadas en lo que va del año muestra bajo rendimiento frente a sus compañeros y aumenta el riesgo de no aprobar."
+    },
+    "rel_q123_pct_correct_mean_vs_best": {
+        "descripcion": "Distancia con el mejor alumno de su materia en respuestas correctas, en lo que va del año.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Estar lejos del mejor alumno de su materia en respuestas correctas en lo que va del año lo ubica con bajo rendimiento frente a sus compañeros y aumenta el riesgo de no aprobar."
+    },
+    "rel_q123_pct_correct_mean_vs_mean": {
+        "descripcion": "Comparación con el promedio de su materia en respuestas correctas, en lo que va del año.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Estar por debajo del promedio de su materia en respuestas correctas en lo que va del año lo ubica con bajo rendimiento frente a sus compañeros y aumenta el riesgo de no aprobar."
+    },
+    "rel_q123_pct_correct_mean_rank_pct": {
+        "descripcion": "Posición entre sus compañeros de materia en respuestas correctas, en lo que va del año.",
+        "unidad": "percentil",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Quedar entre los últimos de su materia en respuestas correctas en lo que va del año muestra bajo rendimiento frente a sus compañeros y aumenta el riesgo de no aprobar."
+    }
+}

@@ -1,0 +1,13 @@
+# Datos
+*.csv
+*.xlsx
+*.xls
+*.parquet
+
+# Comprimidos (el .zip del entregable incluye los CSV)
+*.zip
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

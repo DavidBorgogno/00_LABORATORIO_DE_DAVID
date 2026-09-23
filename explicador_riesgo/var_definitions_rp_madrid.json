@@ -1,0 +1,567 @@
+{
+    "prom_gral": {
+        "descripcion": "Promedio general de notas del estudiante.",
+        "unidad": "indice",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un promedio bajo refleja bajo rendimiento académico y mayor probabilidad de abandono."
+    },
+    "cnv_cantidad_actividades_hechas": {
+        "descripcion": "Cantidad de actividades realizadas.",
+        "unidad": "indice",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Una cantidad baja de actividades realizadas refleja bajo compromiso académico y mayor probabilidad de abandono."
+    },
+    "prom_gral_acum": {
+        "descripcion": "Promedio general acumulado a lo largo de la carrera.",
+        "unidad": "indice",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un promedio acumulado bajo indica rendimiento sostenido pobre y eleva el riesgo de baja."
+    },
+    "prom_aprob": {
+        "descripcion": "Nota promedio de las materias aprobadas.",
+        "unidad": "indice",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Notas bajas incluso en lo aprobado sugieren fragilidad académica."
+    },
+    "prom_desap": {
+        "descripcion": "Nota promedio de las materias reprobadas.",
+        "unidad": "indice",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Notas muy bajas en las reprobadas indican lejanía del aprobado y mayor riesgo."
+    },
+    "promedio_nota_curso": {
+        "descripcion": "Nota promedio del curso académico actual.",
+        "unidad": "indice",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un promedio bajo en el curso actual señala dificultades recientes y eleva el riesgo."
+    },
+    "pct_avance": {
+        "descripcion": "Porcentaje de avance de la carrera.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Poco avance respecto a lo esperado indica estancamiento y mayor probabilidad de abandono."
+    },
+    "pct_avance_aprob": {
+        "descripcion": "Porcentaje de avance efectivamente aprobado de la carrera.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un avance aprobado bajo refleja que el alumno acumula poco progreso real y eleva el riesgo."
+    },
+    "n_aprobados_acum": {
+        "descripcion": "Cantidad total de materias aprobadas en la historia académica.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Pocas materias aprobadas en total indican bajo progreso acumulado."
+    },
+    "n_aprobados_acum_curso": {
+        "descripcion": "Materias aprobadas en el curso académico actual.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Pocas aprobadas en el curso actual reflejan bajo rendimiento reciente y elevan el riesgo."
+    },
+    "n_suspendidas_acum": {
+        "descripcion": "Cantidad total de materias reprobadas en la historia académica.",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Muchas reprobadas acumuladas señalan dificultad sostenida y mayor riesgo de baja."
+    },
+    "n_suspendidas_acum_curso": {
+        "descripcion": "Materias reprobadas en el curso académico actual.",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Reprobadas en el curso actual indican dificultades recientes y elevan el riesgo."
+    },
+    "n_intentos_acum": {
+        "descripcion": "Cantidad total de intentos de exámenes realizados.",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Muchos intentos sugieren que aprobar le cuesta y aumenta el riesgo de abandono."
+    },
+    "n_intentos_acum_curso": {
+        "descripcion": "Intentos de exámenes en el curso académico actual.",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Reintentar exámenes con frecuencia en el curso actual indica esfuerzo poco efectivo."
+    },
+    "diff_pct_avance_vs_grupo_mean_modal": {
+        "descripcion": "Desvío del avance del alumno respecto a la media de su modalidad.",
+        "unidad": "ratio",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un desvío negativo indica avanzar menos que sus pares de modalidad y eleva el riesgo."
+    },
+    "diff_pct_avance_vs_grupo_mean_acad": {
+        "descripcion": "Desvío del avance del alumno respecto a la media de su titulación.",
+        "unidad": "ratio",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Avanzar por debajo de la media de la titulación señala rezago y mayor riesgo."
+    },
+    "zscore_prom_gral_acum_vs_grupo_acad": {
+        "descripcion": "Rendimiento relativo (z-score) del promedio frente a la media de la titulación.",
+        "unidad": "zscore",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un z-score negativo indica rendir por debajo de sus pares de titulación."
+    },
+    "zscore_prom_gral_acum_vs_grupo_modal": {
+        "descripcion": "Rendimiento relativo (z-score) del promedio frente a la media de la modalidad.",
+        "unidad": "zscore",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un z-score negativo indica rendir por debajo de sus pares de modalidad."
+    },
+    "prom_aprob_acum": {
+        "descripcion": "Promedio histórico considerando solo materias aprobadas.",
+        "unidad": "indice",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un promedio histórico bajo en lo aprobado refleja base académica débil."
+    },
+    "prom_desap_acum": {
+        "descripcion": "Promedio histórico considerando solo materias reprobadas.",
+        "unidad": "indice",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Notas muy bajas históricas en reprobadas indican lejanía del aprobado."
+    },
+    "num_cursos": {
+        "descripcion": "Cantidad de cursos en los que el estudiante está inscrito.",
+        "unidad": "conteo",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Dato contextual sobre la carga del estudiante; no marca dirección de riesgo por sí solo."
+    },
+    "n_matriculas": {
+        "descripcion": "Cantidad de matrículas históricas del estudiante.",
+        "unidad": "conteo",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Contexto de trayectoria; pocas matrículas suelen indicar alumno nuevo."
+    },
+    "tiempo_rematricula": {
+        "descripcion": "Tiempo que tardó el estudiante en re-matricularse.",
+        "unidad": "dias",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Tardar más en re-matricularse refleja menor compromiso y eleva el riesgo."
+    },
+    "cod_edicion": {
+        "descripcion": "Edición o cohorte del programa.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Identificador de cohorte; es contexto, no una causa de riesgo en sí."
+    },
+    "pag_pct_pago_real": {
+        "descripcion": "Cumplimiento real de pagos sobre lo comprometido.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un bajo cumplimiento de pagos indica problemas financieros y eleva el riesgo de baja."
+    },
+    "pag_total_pagado": {
+        "descripcion": "Monto total abonado por el estudiante.",
+        "unidad": "monto",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Haber abonado poco respecto a lo comprometido sugiere menor compromiso de pago."
+    },
+    "pag_importe_total": {
+        "descripcion": "Importe total comprometido por la matrícula.",
+        "unidad": "monto",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Monto contractual; es contexto del valor del programa, no una causa directa."
+    },
+    "cuotas_pendientes": {
+        "descripcion": "Cantidad de cuotas de la matrícula aún impagas.",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Más cuotas impagas indican dificultad de pago y mayor probabilidad de baja."
+    },
+    "importe_total_acum": {
+        "descripcion": "Deuda o monto histórico acumulado.",
+        "unidad": "monto",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Una deuda acumulada alta refleja tensión financiera y eleva el riesgo."
+    },
+    "pag_importe_docencia": {
+        "descripcion": "Importe de la cuota de docencia.",
+        "unidad": "monto",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Valor de la cuota; es contexto del costo, no una causa directa de riesgo."
+    },
+    "pag_precio_docencia": {
+        "descripcion": "Precio de lista de la docencia.",
+        "unidad": "monto",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Precio de referencia; contexto de costo del programa."
+    },
+    "precio_docencia": {
+        "descripcion": "Valor base de la docencia.",
+        "unidad": "monto",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Valor base; contexto de costo, sin dirección de riesgo propia."
+    },
+    "coutas_docencia": {
+        "descripcion": "Cantidad de cuotas del plan de docencia.",
+        "unidad": "conteo",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Estructura del plan de pago; es contexto del financiamiento."
+    },
+    "pag_importe_descuento_docencia": {
+        "descripcion": "Monto de descuento aplicado en la cuota de docencia.",
+        "unidad": "monto",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Descuento/beneficio aplicado; contexto financiero sin dirección clara de riesgo."
+    },
+    "pag_importe_reembolso_docencia": {
+        "descripcion": "Monto de reembolsos de docencia.",
+        "unidad": "monto",
+        "direccion_riesgo": "alto",
+        "interpretacion": "La existencia de reembolsos puede asociarse a bajas o desistimientos y eleva el riesgo."
+    },
+    "importe_docencia_acum": {
+        "descripcion": "Acumulado de importes de docencia.",
+        "unidad": "monto",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Acumulado histórico de costo; contexto financiero."
+    },
+    "importe_beca_docencia": {
+        "descripcion": "Monto de beca aplicada a la docencia.",
+        "unidad": "monto",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Apoyo económico recibido; contexto que puede mitigar o reflejar necesidad."
+    },
+    "pag_importe_matricula": {
+        "descripcion": "Importe de la matrícula.",
+        "unidad": "monto",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Costo de matrícula; contexto del compromiso económico inicial."
+    },
+    "precio_matricula": {
+        "descripcion": "Precio de lista de la matrícula.",
+        "unidad": "monto",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Precio de referencia de matrícula; contexto de costo."
+    },
+    "importe_matricula_acum": {
+        "descripcion": "Acumulado de importes de matrícula.",
+        "unidad": "monto",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Acumulado histórico de matrícula; contexto financiero."
+    },
+    "pag_importe_descuento_matricula": {
+        "descripcion": "Monto de descuento aplicado en la matrícula.",
+        "unidad": "monto",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Descuento aplicado; contexto financiero sin dirección clara."
+    },
+    "pag_precio_total_con_desc": {
+        "descripcion": "Precio final con descuento aplicado.",
+        "unidad": "monto",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Precio final pactado; contexto del costo real."
+    },
+    "cnv_cantidad_cursos_start": {
+        "descripcion": "Cantidad de cursos iniciados.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Iniciar pocos cursos refleja baja actividad y mayor riesgo."
+    },
+    "cnv_cantidad_cursos_start_acum": {
+        "descripcion": "Total de cursos iniciados (acumulado).",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Pocos cursos iniciados en total indican baja participación sostenida."
+    },
+    "cnv_cantidad_cursos_start_acum_curso": {
+        "descripcion": "Cursos iniciados en el ciclo actual.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Pocos cursos iniciados en el ciclo actual reflejan baja actividad reciente."
+    },
+    "cnv_cantidad_cursos_end": {
+        "descripcion": "Cantidad de cursos finalizados.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Finalizar pocos cursos indica baja persistencia y eleva el riesgo."
+    },
+    "cnv_cantidad_cursos_end_acum": {
+        "descripcion": "Total de cursos finalizados (acumulado).",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Pocos cursos finalizados en total reflejan baja tasa de cierre."
+    },
+    "cnv_cantidad_actividades_hechas_acum": {
+        "descripcion": "Volumen de actividades realizadas (acumulado).",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Realizar pocas actividades indica bajo compromiso con el LMS y mayor riesgo."
+    },
+    "cnv_cantidad_actividades_entregadas_acum": {
+        "descripcion": "Volumen de entregas realizadas (acumulado).",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Pocas entregas reflejan baja participación y elevan el riesgo."
+    },
+    "cnv_cantidad_actividades_corregidas": {
+        "descripcion": "Cantidad de actividades corregidas.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Pocas actividades corregidas indican baja actividad evaluada."
+    },
+    "cnv_cantidad_actividades_corregidas_acum": {
+        "descripcion": "Total de actividades corregidas (acumulado).",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Pocas correcciones acumuladas reflejan baja participación sostenida."
+    },
+    "cnv_cantidad_actividades_corregidas_acum_curso": {
+        "descripcion": "Actividades corregidas en el curso actual.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Pocas correcciones en el curso actual indican bajo compromiso reciente."
+    },
+    "cnv_cantidad_actividades_vencidas": {
+        "descripcion": "Cantidad de actividades vencidas.",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Muchas actividades vencidas reflejan desenganche y elevan el riesgo."
+    },
+    "cnv_cantidad_desbloqueadas_no_entregadas": {
+        "descripcion": "Actividades disponibles pero sin entregar.",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Tareas disponibles sin entregar indican baja respuesta y mayor riesgo."
+    },
+    "cnv_cantidad_add_created_acum_curso": {
+        "descripcion": "Interacción en foros / creación de contenido en el ciclo actual.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Poca interacción en foros refleja bajo involucramiento y eleva el riesgo."
+    },
+    "cnv_cantidad_actividades_vencidas_acum": {
+        "descripcion": "Total de actividades vencidas (acumulado).",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Acumular vencimientos refleja desenganche sostenido y mayor riesgo."
+    },
+    "cnv_cantidad_add_created": {
+        "descripcion": "Interacción en foros / creación de contenido (ciclo actual).",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Baja creación/interacción indica poco involucramiento en la plataforma."
+    },
+    "cnv_cantidad_actividades_vencidas_acum_curso": {
+        "descripcion": "Actividades vencidas acumuladas en el ciclo actual.",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Muchos vencimientos en el ciclo actual reflejan desenganche reciente."
+    },
+    "diff_act_vencidas_acum_vs_grupo_mean_acad": {
+        "descripcion": "Desvío de actividades vencidas respecto a la media de la titulación.",
+        "unidad": "ratio",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Vencer más actividades que sus pares de titulación señala mayor desenganche."
+    },
+    "act_ext_acum": {
+        "descripcion": "Cantidad de actividades extracurriculares realizadas (acumulado).",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Participar poco en actividades extracurriculares refleja menor integración."
+    },
+    "cnv_cantidad_cursos_end_acum_curso": {
+        "descripcion": "Cursos finalizados en el ciclo actual.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Finalizar pocos cursos en el ciclo actual indica baja persistencia reciente."
+    },
+    "cnv_cantidad_actividades_que_vencen_acum": {
+        "descripcion": "Total de actividades con fecha de vencimiento (acumulado).",
+        "unidad": "conteo",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Volumen de actividades con plazo; es contexto de la carga, no causa directa."
+    },
+    "cnv_cantidad_desbloqueadas_no_entregadas_acum": {
+        "descripcion": "Total de tareas disponibles sin entregar (acumulado).",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Acumular tareas sin entregar refleja desenganche sostenido y eleva el riesgo."
+    },
+    "cnv_cantidad_desbloqueadas_no_entregadas_acum_curso": {
+        "descripcion": "Tareas disponibles sin entregar en el ciclo actual.",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Muchas tareas sin entregar en el ciclo actual indican baja respuesta reciente."
+    },
+    "cnv_cantidad_actividades_hechas_acum_curso": {
+        "descripcion": "Actividades realizadas en el ciclo actual.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Realizar pocas actividades en el ciclo actual indica bajo compromiso reciente."
+    },
+    "cnv_cantidad_add_created_acum": {
+        "descripcion": "Interacciones / creaciones en foros (acumulado).",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Baja interacción acumulada en foros refleja poco involucramiento sostenido."
+    },
+    "diff_act_vencidas_acum_vs_grupo_mean_modal": {
+        "descripcion": "Desvío de actividades vencidas respecto a la media de la modalidad.",
+        "unidad": "ratio",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Vencer más actividades que sus pares de modalidad señala mayor desenganche."
+    },
+    "n_asig_pend_acum": {
+        "descripcion": "Cantidad total de asignaturas pendientes acumuladas.",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Muchas asignaturas pendientes reflejan rezago y elevan el riesgo de baja."
+    },
+    "n_intentos": {
+        "descripcion": "Cantidad de intentos de exámenes según convocatorias.",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Más intentos sugieren dificultad para aprobar y mayor riesgo."
+    },
+    "n_asig_pend_acum_curso": {
+        "descripcion": "Asignaturas pendientes en el curso académico actual.",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Pendientes en el curso actual reflejan rezago reciente y elevan el riesgo."
+    },
+    "n_suspendidas": {
+        "descripcion": "Asignaturas suspendidas en el curso académico actual.",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Suspender asignaturas en el curso actual indica dificultades recientes."
+    },
+    "n_aprobados": {
+        "descripcion": "Asignaturas aprobadas en el curso académico actual.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Aprobar pocas asignaturas en el curso actual refleja bajo rendimiento reciente."
+    },
+    "num_activ_extracurriculares": {
+        "descripcion": "Cantidad de actividades extracurriculares.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Poca participación extracurricular refleja menor integración con la institución."
+    },
+    "edad_alumno": {
+        "descripcion": "Edad del estudiante.",
+        "unidad": "anios",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Dato demográfico de contexto; no marca dirección de riesgo por sí solo."
+    },
+    "sede_cod_postal": {
+        "descripcion": "Ubicación o sede del estudiante (código postal).",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Ubicación geográfica; contexto sin dirección de riesgo propia."
+    },
+    "ant_estudiante_dias": {
+        "descripcion": "Antigüedad del estudiante en la institución, en días.",
+        "unidad": "dias",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Menor antigüedad suele asociarse a estudiantes nuevos con mayor riesgo de baja."
+    },
+    "mes_del_registro": {
+        "descripcion": "Mes en que se registró el ingreso.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Estacionalidad de ingreso; contexto sin dirección de riesgo propia."
+    },
+    "anio_cursado_max": {
+        "descripcion": "Cantidad máxima de años cursados.",
+        "unidad": "anios",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Trayectoria temporal; es contexto y debe leerse junto al avance real."
+    },
+    "cod_plan": {
+        "descripcion": "Plan de estudios del estudiante.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Identificador de plan; contexto, no una causa de riesgo en sí."
+    },
+    "tiempo_desde_rematricula_meses": {
+        "descripcion": "Meses transcurridos desde la última matrícula.",
+        "unidad": "meses",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Más meses sin re-matricularse reflejan desvinculación y elevan el riesgo."
+    },
+    "mes_cos": {
+        "descripcion": "Componente de estacionalidad del mes en el ciclo.",
+        "unidad": "ratio",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Variable técnica de estacionalidad; contexto sin dirección de riesgo."
+    },
+    "particion": {
+        "descripcion": "Periodo de análisis de los datos.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Marca temporal del análisis; contexto, no una causa de riesgo."
+    },
+    "idx_fin_cumplimiento_pagos": {
+        "descripcion": "Tasa de cumplimiento de pagos.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Una baja tasa de cumplimiento de pagos indica tensión financiera y eleva el riesgo."
+    },
+    "idx_fin_cobertura_beca": {
+        "descripcion": "Tasa de cobertura de beca sobre el costo.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Nivel de apoyo económico; contexto que puede mitigar o reflejar necesidad."
+    },
+    "idx_fin_morosidad_cuotas": {
+        "descripcion": "Tasa de morosidad en el pago de cuotas.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Una alta morosidad refleja problemas de pago y eleva el riesgo de baja."
+    },
+    "idx_lms_finalizacion_cursos": {
+        "descripcion": "Tasa de finalización de cursos en el LMS.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Una baja tasa de finalización indica baja persistencia y eleva el riesgo."
+    },
+    "idx_lms_tasa_atraso_actividades": {
+        "descripcion": "Tasa de atraso en la entrega de actividades.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Un alto atraso en entregas refleja desenganche y eleva el riesgo."
+    },
+    "idx_lms_proactividad_entregas": {
+        "descripcion": "Tasa de proactividad en las entregas (anticipación).",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Baja proactividad en entregas indica menor compromiso y mayor riesgo."
+    },
+    "idx_lms_frecuencia_creacion_diaria": {
+        "descripcion": "Frecuencia diaria de creación/actividad en foros.",
+        "unidad": "indice",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Una baja frecuencia de actividad diaria refleja poco involucramiento y eleva el riesgo."
+    },
+    "idx_acad_efectividad_examenes": {
+        "descripcion": "Tasa de efectividad en exámenes (aprobados sobre intentos).",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Una baja efectividad en exámenes indica dificultad para aprobar y eleva el riesgo."
+    },
+    "idx_acad_sobrecarga_pendientes": {
+        "descripcion": "Tasa de sobrecarga de asignaturas pendientes.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Una alta sobrecarga de pendientes refleja rezago y eleva el riesgo."
+    },
+    "idx_acad_tasa_fracaso": {
+        "descripcion": "Tasa de fracaso académico (reprobadas sobre cursadas).",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Una alta tasa de fracaso indica bajo rendimiento y eleva el riesgo de baja."
+    },
+    "cnv_cantidad_actividades_que_vencen": {
+        "descripcion": "Cantidad de actividades próximas a vencer.",
+        "unidad": "conteo",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Volumen de actividades con plazo próximo; es contexto de la carga."
+    },
+    "antiguedad_matricula_meses": {
+        "descripcion": "Antigüedad de la matrícula, en meses.",
+        "unidad": "meses",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Menor antigüedad de la matrícula suele asociarse a mayor riesgo de baja."
+    },
+    "Neutro": "Sin subcausa predominante"
+}

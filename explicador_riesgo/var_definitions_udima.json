@@ -1,0 +1,471 @@
+{
+  "nota_media_acum": {
+    "descripcion": "Promedio de notas (acumulado)",
+    "unidad": "indice",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abPromedio de notas (acumulado)\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Rendimiento Acad\u00e9mico"
+  },
+  "nota_mediana_acum": {
+    "descripcion": "Mediana de notas (acumulado)",
+    "unidad": "indice",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abMediana de notas (acumulado)\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Rendimiento Acad\u00e9mico"
+  },
+  "nota_std_acum": {
+    "descripcion": "Variabilidad de notas (acumulado)",
+    "unidad": "indice",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abVariabilidad de notas (acumulado)\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Rendimiento Acad\u00e9mico"
+  },
+  "n_calificaciones_acum": {
+    "descripcion": "N\u00famero de calificaciones (acumulado)",
+    "unidad": "conteo",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abN\u00famero de calificaciones (acumulado)\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Rendimiento Acad\u00e9mico"
+  },
+  "pct_aprobados_acum": {
+    "descripcion": "Porcentaje de aprobados (acumulado)",
+    "unidad": "porcentaje",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abPorcentaje de aprobados (acumulado)\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Rendimiento Acad\u00e9mico"
+  },
+  "pct_suspenso_np_acum": {
+    "descripcion": "Porcentaje de suspensos y no presentados (acumulado)",
+    "unidad": "porcentaje",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abPorcentaje de suspensos y no presentados (acumulado)\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Rendimiento Acad\u00e9mico"
+  },
+  "nota_media_30d": {
+    "descripcion": "Promedio de notas en los \u00faltimos 30 d\u00edas",
+    "unidad": "indice",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abPromedio de notas en los \u00faltimos 30 d\u00edas\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Rendimiento Acad\u00e9mico"
+  },
+  "pct_suspenso_30d": {
+    "descripcion": "Porcentaje de suspensos y no presentados en los \u00faltimos 30 d\u00edas",
+    "unidad": "porcentaje",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abPorcentaje de suspensos y no presentados en los \u00faltimos 30 d\u00edas\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Rendimiento Acad\u00e9mico"
+  },
+  "n_calificaciones_30d": {
+    "descripcion": "N\u00famero de calificaciones en los \u00faltimos 30 d\u00edas",
+    "unidad": "conteo",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abN\u00famero de calificaciones en los \u00faltimos 30 d\u00edas\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Rendimiento Acad\u00e9mico"
+  },
+  "nota_media_90d": {
+    "descripcion": "Promedio de notas en los \u00faltimos 90 d\u00edas",
+    "unidad": "indice",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abPromedio de notas en los \u00faltimos 90 d\u00edas\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Rendimiento Acad\u00e9mico"
+  },
+  "pct_suspenso_90d": {
+    "descripcion": "Porcentaje de suspensos y no presentados en los \u00faltimos 90 d\u00edas",
+    "unidad": "porcentaje",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abPorcentaje de suspensos y no presentados en los \u00faltimos 90 d\u00edas\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Rendimiento Acad\u00e9mico"
+  },
+  "n_calificaciones_90d": {
+    "descripcion": "N\u00famero de calificaciones en los \u00faltimos 90 d\u00edas",
+    "unidad": "conteo",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abN\u00famero de calificaciones en los \u00faltimos 90 d\u00edas\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Rendimiento Acad\u00e9mico"
+  },
+  "nota_media_365d": {
+    "descripcion": "Promedio de notas en los \u00faltimos 365 d\u00edas",
+    "unidad": "indice",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abPromedio de notas en los \u00faltimos 365 d\u00edas\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Rendimiento Acad\u00e9mico"
+  },
+  "pct_suspenso_365d": {
+    "descripcion": "Porcentaje de suspensos y no presentados en los \u00faltimos 365 d\u00edas",
+    "unidad": "porcentaje",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abPorcentaje de suspensos y no presentados en los \u00faltimos 365 d\u00edas\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Rendimiento Acad\u00e9mico"
+  },
+  "n_calificaciones_365d": {
+    "descripcion": "N\u00famero de calificaciones en los \u00faltimos 365 d\u00edas",
+    "unidad": "conteo",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abN\u00famero de calificaciones en los \u00faltimos 365 d\u00edas\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Rendimiento Acad\u00e9mico"
+  },
+  "n_impagos_acum": {
+    "descripcion": "N\u00famero de impagos (acumulado)",
+    "unidad": "conteo",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abN\u00famero de impagos (acumulado)\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Situaci\u00f3n Financiera"
+  },
+  "flag_primer_impago": {
+    "descripcion": "Tiene alg\u00fan impago",
+    "unidad": "binario",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abTiene alg\u00fan impago\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Situaci\u00f3n Financiera"
+  },
+  "monto_deuda_acum": {
+    "descripcion": "Monto total de deuda (acumulado)",
+    "unidad": "monto",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abMonto total de deuda (acumulado)\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Situaci\u00f3n Financiera"
+  },
+  "ratio_cobrado_acum": {
+    "descripcion": "Porcentaje de pagos cobrados (acumulado)",
+    "unidad": "ratio",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abPorcentaje de pagos cobrados (acumulado)\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Situaci\u00f3n Financiera"
+  },
+  "dias_desde_primer_impago": {
+    "descripcion": "D\u00edas desde el primer impago",
+    "unidad": "conteo_dias",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abD\u00edas desde el primer impago\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Situaci\u00f3n Financiera"
+  },
+  "n_impagos_30d": {
+    "descripcion": "N\u00famero de impagos en los \u00faltimos 30 d\u00edas",
+    "unidad": "conteo",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abN\u00famero de impagos en los \u00faltimos 30 d\u00edas\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Situaci\u00f3n Financiera"
+  },
+  "monto_impago_30d": {
+    "descripcion": "Monto en impago en los \u00faltimos 30 d\u00edas",
+    "unidad": "monto",
+    "direccion_riesgo": "neutro",
+    "interpretacion": "El efecto de \u00abMonto en impago en los \u00faltimos 30 d\u00edas\u00bb sobre el riesgo no es mon\u00f3tono o no se pudo determinar.",
+    "dimension": "Situaci\u00f3n Financiera"
+  },
+  "n_impagos_90d": {
+    "descripcion": "N\u00famero de impagos en los \u00faltimos 90 d\u00edas",
+    "unidad": "conteo",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abN\u00famero de impagos en los \u00faltimos 90 d\u00edas\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Situaci\u00f3n Financiera"
+  },
+  "monto_impago_90d": {
+    "descripcion": "Monto en impago en los \u00faltimos 90 d\u00edas",
+    "unidad": "monto",
+    "direccion_riesgo": "neutro",
+    "interpretacion": "El efecto de \u00abMonto en impago en los \u00faltimos 90 d\u00edas\u00bb sobre el riesgo no es mon\u00f3tono o no se pudo determinar.",
+    "dimension": "Situaci\u00f3n Financiera"
+  },
+  "flag_bloqueo_activo": {
+    "descripcion": "Tiene un bloqueo activo",
+    "unidad": "binario",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abTiene un bloqueo activo\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Perfil Institucional"
+  },
+  "n_bloqueos_acum": {
+    "descripcion": "N\u00famero de bloqueos (acumulado)",
+    "unidad": "conteo",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abN\u00famero de bloqueos (acumulado)\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Perfil Institucional"
+  },
+  "dias_desde_primer_bloqueo": {
+    "descripcion": "D\u00edas desde el primer bloqueo",
+    "unidad": "conteo_dias",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abD\u00edas desde el primer bloqueo\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Perfil Institucional"
+  },
+  "n_bloqueos_30d": {
+    "descripcion": "N\u00famero de bloqueos en los \u00faltimos 30 d\u00edas",
+    "unidad": "conteo",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abN\u00famero de bloqueos en los \u00faltimos 30 d\u00edas\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Perfil Institucional"
+  },
+  "n_bloqueos_90d": {
+    "descripcion": "N\u00famero de bloqueos en los \u00faltimos 90 d\u00edas",
+    "unidad": "conteo",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abN\u00famero de bloqueos en los \u00faltimos 90 d\u00edas\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Perfil Institucional"
+  },
+  "n_nodos_completados_acum": {
+    "descripcion": "Hitos curriculares completados (acumulado)",
+    "unidad": "conteo",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abHitos curriculares completados (acumulado)\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Rendimiento Acad\u00e9mico"
+  },
+  "max_nodo_alcanzado": {
+    "descripcion": "M\u00e1ximo hito curricular alcanzado",
+    "unidad": "conteo",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abM\u00e1ximo hito curricular alcanzado\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Rendimiento Acad\u00e9mico"
+  },
+  "dias_por_nodo_promedio": {
+    "descripcion": "D\u00edas promedio entre hitos curriculares",
+    "unidad": "conteo_dias",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abD\u00edas promedio entre hitos curriculares\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Rendimiento Acad\u00e9mico"
+  },
+  "dias_desde_ultimo_nodo": {
+    "descripcion": "D\u00edas desde el \u00faltimo hito curricular",
+    "unidad": "conteo_dias",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abD\u00edas desde el \u00faltimo hito curricular\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Rendimiento Acad\u00e9mico"
+  },
+  "n_asignaturas_periodo_actual": {
+    "descripcion": "Asignaturas del per\u00edodo actual",
+    "unidad": "conteo",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abAsignaturas del per\u00edodo actual\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Perfil Institucional"
+  },
+  "n_asignaturas_acum": {
+    "descripcion": "Asignaturas matriculadas (acumulado)",
+    "unidad": "conteo",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abAsignaturas matriculadas (acumulado)\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Perfil Institucional"
+  },
+  "n_periodos_matriculado": {
+    "descripcion": "Per\u00edodos en que estuvo matriculado",
+    "unidad": "conteo",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abPer\u00edodos en que estuvo matriculado\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Perfil Institucional"
+  },
+  "n_convalidaciones_total": {
+    "descripcion": "Total de convalidaciones",
+    "unidad": "conteo",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abTotal de convalidaciones\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Perfil Institucional"
+  },
+  "n_convalidaciones_aprobadas": {
+    "descripcion": "Convalidaciones aprobadas",
+    "unidad": "conteo",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abConvalidaciones aprobadas\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Perfil Institucional"
+  },
+  "SEXPRS": {
+    "descripcion": "Sexo",
+    "unidad": "categorico",
+    "direccion_riesgo": "neutro",
+    "interpretacion": "\u00abSexo\u00bb es categ\u00f3rica; su efecto sobre el riesgo depende de la categor\u00eda.",
+    "dimension": "Perfil Demogr\u00e1fico"
+  },
+  "PAI_CODALFNAI": {
+    "descripcion": "Nacionalidad",
+    "unidad": "categorico",
+    "direccion_riesgo": "neutro",
+    "interpretacion": "\u00abNacionalidad\u00bb es categ\u00f3rica; su efecto sobre el riesgo depende de la categor\u00eda.",
+    "dimension": "Perfil Demogr\u00e1fico"
+  },
+  "edad_en_observacion": {
+    "descripcion": "Edad",
+    "unidad": "indice",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abEdad\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Perfil Demogr\u00e1fico"
+  },
+  "lms_n_cursos_accedidos_acum": {
+    "descripcion": "N\u00famero de cursos accedidos (acumulado)",
+    "unidad": "conteo",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abN\u00famero de cursos accedidos (acumulado)\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Interacci\u00f3n en Plataforma (LMS)"
+  },
+  "lms_n_accesos_acum": {
+    "descripcion": "N\u00famero de accesos al campus (acumulado)",
+    "unidad": "conteo",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abN\u00famero de accesos al campus (acumulado)\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Interacci\u00f3n en Plataforma (LMS)"
+  },
+  "lms_dias_desde_ultimo_acceso": {
+    "descripcion": "D\u00edas desde el \u00faltimo acceso al campus",
+    "unidad": "conteo_dias",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abD\u00edas desde el \u00faltimo acceso al campus\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Interacci\u00f3n en Plataforma (LMS)"
+  },
+  "lms_n_cursos_accedidos_30d": {
+    "descripcion": "N\u00famero de cursos accedidos en los \u00faltimos 30 d\u00edas",
+    "unidad": "conteo",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abN\u00famero de cursos accedidos en los \u00faltimos 30 d\u00edas\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Interacci\u00f3n en Plataforma (LMS)"
+  },
+  "lms_flag_acceso_30d": {
+    "descripcion": "Tuvo acceso al campus en los \u00faltimos 30 d\u00edas",
+    "unidad": "binario",
+    "direccion_riesgo": "neutro",
+    "interpretacion": "El efecto de \u00abTuvo acceso al campus en los \u00faltimos 30 d\u00edas\u00bb sobre el riesgo no es mon\u00f3tono o no se pudo determinar.",
+    "dimension": "Interacci\u00f3n en Plataforma (LMS)"
+  },
+  "lms_n_cursos_accedidos_90d": {
+    "descripcion": "N\u00famero de cursos accedidos en los \u00faltimos 90 d\u00edas",
+    "unidad": "conteo",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abN\u00famero de cursos accedidos en los \u00faltimos 90 d\u00edas\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Interacci\u00f3n en Plataforma (LMS)"
+  },
+  "lms_flag_acceso_90d": {
+    "descripcion": "Tuvo acceso al campus en los \u00faltimos 90 d\u00edas",
+    "unidad": "binario",
+    "direccion_riesgo": "neutro",
+    "interpretacion": "El efecto de \u00abTuvo acceso al campus en los \u00faltimos 90 d\u00edas\u00bb sobre el riesgo no es mon\u00f3tono o no se pudo determinar.",
+    "dimension": "Interacci\u00f3n en Plataforma (LMS)"
+  },
+  "lms_n_entregas_submitted_acum": {
+    "descripcion": "Entregas completadas (acumulado)",
+    "unidad": "conteo",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abEntregas completadas (acumulado)\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Interacci\u00f3n en Plataforma (LMS)"
+  },
+  "lms_n_entregas_new_acum": {
+    "descripcion": "Actividades sin abrir (acumulado)",
+    "unidad": "conteo",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abActividades sin abrir (acumulado)\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Interacci\u00f3n en Plataforma (LMS)"
+  },
+  "lms_dias_desde_ultima_entrega": {
+    "descripcion": "D\u00edas desde la \u00faltima entrega",
+    "unidad": "conteo_dias",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abD\u00edas desde la \u00faltima entrega\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Interacci\u00f3n en Plataforma (LMS)"
+  },
+  "lms_pct_submitted_acum": {
+    "descripcion": "Porcentaje de entregas completadas (acumulado)",
+    "unidad": "porcentaje",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abPorcentaje de entregas completadas (acumulado)\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Interacci\u00f3n en Plataforma (LMS)"
+  },
+  "lms_n_entregas_submitted_30d": {
+    "descripcion": "Entregas completadas en los \u00faltimos 30 d\u00edas",
+    "unidad": "conteo",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abEntregas completadas en los \u00faltimos 30 d\u00edas\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Interacci\u00f3n en Plataforma (LMS)"
+  },
+  "lms_n_entregas_submitted_90d": {
+    "descripcion": "Entregas completadas en los \u00faltimos 90 d\u00edas",
+    "unidad": "conteo",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abEntregas completadas en los \u00faltimos 90 d\u00edas\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Interacci\u00f3n en Plataforma (LMS)"
+  },
+  "lms_nota_media_acum": {
+    "descripcion": "Promedio de notas en el campus (acumulado)",
+    "unidad": "indice",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abPromedio de notas en el campus (acumulado)\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Rendimiento Acad\u00e9mico"
+  },
+  "lms_n_items_calificados_acum": {
+    "descripcion": "\u00cdtems calificados en el campus (acumulado)",
+    "unidad": "conteo",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00ab\u00cdtems calificados en el campus (acumulado)\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Interacci\u00f3n en Plataforma (LMS)"
+  },
+  "lms_nota_media_30d": {
+    "descripcion": "Promedio de notas en el campus en los \u00faltimos 30 d\u00edas",
+    "unidad": "indice",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abPromedio de notas en el campus en los \u00faltimos 30 d\u00edas\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Rendimiento Acad\u00e9mico"
+  },
+  "lms_nota_media_90d": {
+    "descripcion": "Promedio de notas en el campus en los \u00faltimos 90 d\u00edas",
+    "unidad": "indice",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abPromedio de notas en el campus en los \u00faltimos 90 d\u00edas\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Rendimiento Acad\u00e9mico"
+  },
+  "plan_numanys": {
+    "descripcion": "Duraci\u00f3n del plan de estudios (a\u00f1os)",
+    "unidad": "indice",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abDuraci\u00f3n del plan de estudios (a\u00f1os)\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Perfil Institucional"
+  },
+  "plan_codciclo": {
+    "descripcion": "Ciclo del plan de estudios",
+    "unidad": "indice",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abCiclo del plan de estudios\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Perfil Institucional"
+  },
+  "plan_semanas_esperadas": {
+    "descripcion": "Duraci\u00f3n esperada del plan (semanas)",
+    "unidad": "indice",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abDuraci\u00f3n esperada del plan (semanas)\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Perfil Institucional"
+  },
+  "plan_tipo_encoded": {
+    "descripcion": "Tipo de titulaci\u00f3n",
+    "unidad": "indice",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abTipo de titulaci\u00f3n\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Perfil Institucional"
+  },
+  "plan_pct_tiempo_transcurrido": {
+    "descripcion": "Porcentaje del tiempo del plan transcurrido",
+    "unidad": "porcentaje",
+    "direccion_riesgo": "alto",
+    "interpretacion": "Un valor alto de \u00abPorcentaje del tiempo del plan transcurrido\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Perfil Institucional"
+  },
+  "n_cambios_mat_acum": {
+    "descripcion": "N\u00famero de cambios de matr\u00edcula (acumulado)",
+    "unidad": "conteo",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abN\u00famero de cambios de matr\u00edcula (acumulado)\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Perfil Institucional"
+  },
+  "dias_desde_ultimo_cambio_mat": {
+    "descripcion": "D\u00edas desde el \u00faltimo cambio de matr\u00edcula",
+    "unidad": "conteo_dias",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abD\u00edas desde el \u00faltimo cambio de matr\u00edcula\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Perfil Institucional"
+  },
+  "n_cambios_mat_30d": {
+    "descripcion": "N\u00famero de cambios de matr\u00edcula en los \u00faltimos 30 d\u00edas",
+    "unidad": "conteo",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abN\u00famero de cambios de matr\u00edcula en los \u00faltimos 30 d\u00edas\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Perfil Institucional"
+  },
+  "n_cambios_mat_90d": {
+    "descripcion": "N\u00famero de cambios de matr\u00edcula en los \u00faltimos 90 d\u00edas",
+    "unidad": "conteo",
+    "direccion_riesgo": "bajo",
+    "interpretacion": "Un valor bajo de \u00abN\u00famero de cambios de matr\u00edcula en los \u00faltimos 90 d\u00edas\u00bb se asocia a MAYOR probabilidad de baja.",
+    "dimension": "Perfil Institucional"
+  }
+}

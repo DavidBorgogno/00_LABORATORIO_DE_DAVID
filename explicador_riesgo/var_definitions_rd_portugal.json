@@ -1,0 +1,254 @@
+{
+    "id_matricula": {
+        "descripcion": "Identificador de la matrícula del alumno.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Identificador de la matrícula; es contexto, no una causa de riesgo en sí."
+    },
+    "student_id": {
+        "descripcion": "Identificador del alumno en el SIS.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Identificador del alumno; es contexto, no una causa de riesgo en sí."
+    },
+    "student_id_lms": {
+        "descripcion": "Identificador del alumno en el LMS (Canvas).",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Identificador del alumno en el LMS; es contexto, no una causa de riesgo en sí."
+    },
+    "fecha_inicio_matricula": {
+        "descripcion": "Fecha de inicio de la matrícula.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Marca temporal de inicio de la matrícula; es contexto, no una causa de riesgo en sí."
+    },
+    "fecha_rematriculacion": {
+        "descripcion": "Fecha de rematriculación del alumno.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Marca temporal de la rematriculación; es contexto, no una causa de riesgo en sí."
+    },
+    "curso_academico": {
+        "descripcion": "Período académico cursado.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Identificador del curso académico; es contexto temporal, no una causa de riesgo en sí."
+    },
+    "anio_mes": {
+        "descripcion": "Año y mes del registro considerado.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Marca temporal del registro (formato YYYY-MM); es contexto, no una causa de riesgo en sí."
+    },
+    "periodo": {
+        "descripcion": "Años de permanencia de la matrícula en la institución.",
+        "unidad": "anios",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Una permanencia corta suele corresponder a alumnos más nuevos, con mayor probabilidad de baja."
+    },
+    "cod_titulo": {
+        "descripcion": "Identificador de la titulación.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Identificador de la titulación; es contexto, no una causa de riesgo en sí."
+    },
+    "cod_plan": {
+        "descripcion": "Plan académico de la titulación.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Identificador del plan de estudios; es contexto, no una causa de riesgo en sí."
+    },
+    "nombre_titulacion": {
+        "descripcion": "Nombre de la titulación.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Nombre de la titulación; es contexto, no una causa de riesgo en sí."
+    },
+    "tipo_titulo": {
+        "descripcion": "Tipo de titulación (licenciatura, maestrado, doutoramento, entre otros).",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Tipo de programa; es contexto y su efecto depende de la categoría, no marca dirección por sí solo."
+    },
+    "modalidad": {
+        "descripcion": "Modalidad de la titulación (presencial u online).",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Modalidad de cursado; es contexto y su efecto depende de la categoría, no marca dirección por sí solo."
+    },
+    "tipo_estudiante": {
+        "descripcion": "Tipo de estudiante: nuevo inscripto o reinscripto.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Condición de ingreso; es contexto y su efecto depende de la categoría, no marca dirección por sí solo."
+    },
+    "edad": {
+        "descripcion": "Edad del estudiante.",
+        "unidad": "anios",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Dato demográfico de contexto; no marca dirección de riesgo por sí solo."
+    },
+    "nacionalidad": {
+        "descripcion": "Nacionalidad del estudiante.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Dato demográfico de contexto; su efecto depende de la categoría, no marca dirección por sí solo."
+    },
+    "naturalidad": {
+        "descripcion": "Lugar de nacimiento del estudiante.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Dato demográfico de contexto; no marca dirección de riesgo por sí solo."
+    },
+    "sede_provincia": {
+        "descripcion": "Provincia de la sede del estudiante.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Ubicación geográfica; es contexto, sin dirección de riesgo propia."
+    },
+    "sede_poblacion": {
+        "descripcion": "Población de la sede del estudiante.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Ubicación geográfica; es contexto, sin dirección de riesgo propia."
+    },
+    "sede_cod_postal": {
+        "descripcion": "Código postal de la sede del estudiante.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Ubicación geográfica; es contexto, sin dirección de riesgo propia."
+    },
+    "asignaturas_convalidadas": {
+        "descripcion": "Asignaturas convalidadas acumuladas.",
+        "unidad": "conteo",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Volumen de convalidaciones de la trayectoria; es contexto y no marca una dirección de riesgo clara por sí solo."
+    },
+    "asignaturas_aprobadas": {
+        "descripcion": "Asignaturas aprobadas acumuladas.",
+        "unidad": "conteo",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Pocas asignaturas aprobadas reflejan bajo progreso académico y elevan la probabilidad de baja."
+    },
+    "asignaturas_suspendidas": {
+        "descripcion": "Asignaturas desaprobadas acumuladas.",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Muchas asignaturas desaprobadas reflejan dificultad académica y elevan la probabilidad de baja."
+    },
+    "pct_avance_aprob": {
+        "descripcion": "Porcentaje de avance de asignaturas aprobadas.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un bajo avance aprobado indica poco progreso real en la carrera y eleva la probabilidad de baja."
+    },
+    "pag_importe_total": {
+        "descripcion": "Importe total a pagar de la titulación.",
+        "unidad": "monto",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Monto contractual del programa; es contexto de costo, no una causa directa de riesgo."
+    },
+    "total_pagado": {
+        "descripcion": "Importe total pagado de la titulación.",
+        "unidad": "monto",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Haber abonado poco respecto a lo comprometido sugiere menor compromiso de pago y eleva la probabilidad de baja."
+    },
+    "pct_pago_real": {
+        "descripcion": "Porcentaje de pago real de la titulación.",
+        "unidad": "porcentaje",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "Un bajo cumplimiento de pago indica tensión financiera y eleva la probabilidad de baja."
+    },
+    "q_pagos_vencidos": {
+        "descripcion": "Cantidad de pagos vencidos de la matrícula.",
+        "unidad": "conteo",
+        "direccion_riesgo": "alto",
+        "interpretacion": "Más pagos vencidos indican dificultad de pago y elevan la probabilidad de baja."
+    },
+    "whitelist": {
+        "descripcion": "Indica si la matrícula puede renovarse aun con deuda.",
+        "unidad": "binario",
+        "direccion_riesgo": "bajo",
+        "interpretacion": "No estar habilitado para renovar con deuda implica que un impago puede frenar la continuidad y eleva la probabilidad de baja."
+    },
+    "fecha_baja": {
+        "descripcion": "Fecha de baja de la matrícula.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Marca temporal de la baja; es un dato de resultado/contexto, no un factor de entrada."
+    },
+    "estado": {
+        "descripcion": "Estado de la matrícula.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Estado administrativo de la matrícula; es contexto/resultado, no un factor de riesgo por sí solo."
+    },
+    "tipo_anulacion": {
+        "descripcion": "Tipo de anulación de la matrícula.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Detalle del tipo de baja; es un dato de resultado/contexto, no un factor de entrada."
+    },
+    "abandono": {
+        "descripcion": "Variable objetivo: indica si la matrícula abandonó (1) o continúa (0).",
+        "unidad": "binario",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Es la variable objetivo (target) del modelo; no es un factor de entrada ni marca dirección de riesgo."
+    },
+    "prob_baja_mensual": {
+        "descripcion": "Probabilidad de baja mensual estimada por el modelo.",
+        "unidad": "ratio",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Es una salida del modelo (la probabilidad estimada), no un factor de entrada."
+    },
+    "nivel_riesgo_mensual": {
+        "descripcion": "Categorización del riesgo mensual de la matrícula.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Es una salida del modelo (el nivel de riesgo), no un factor de entrada."
+    },
+    "causa_baja_mensual": {
+        "descripcion": "Causa de baja mensual estimada.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Es una salida del modelo (la causa asignada), no un factor de entrada."
+    },
+    "subcausa_baja_mensual": {
+        "descripcion": "Subcausa de baja mensual estimada.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Es una salida del modelo (la subcausa asignada), no un factor de entrada."
+    },
+    "prob_baja_anual": {
+        "descripcion": "Probabilidad de baja anual estimada por el modelo.",
+        "unidad": "ratio",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Es una salida del modelo (la probabilidad estimada), no un factor de entrada."
+    },
+    "nivel_riesgo_anual": {
+        "descripcion": "Categorización del riesgo anual de la matrícula.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Es una salida del modelo (el nivel de riesgo), no un factor de entrada."
+    },
+    "causa_baja_anual": {
+        "descripcion": "Causa de baja anual estimada.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Es una salida del modelo (la causa asignada), no un factor de entrada."
+    },
+    "subcausa_baja_anual": {
+        "descripcion": "Subcausa de baja anual estimada.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Es una salida del modelo (la subcausa asignada), no un factor de entrada."
+    },
+    "prediction_date": {
+        "descripcion": "Fecha de extracción del SIS sobre la que se realiza la predicción.",
+        "unidad": "categorico",
+        "direccion_riesgo": "neutro",
+        "interpretacion": "Marca temporal de la predicción; es contexto, no una causa de riesgo en sí."
+    }
+}
